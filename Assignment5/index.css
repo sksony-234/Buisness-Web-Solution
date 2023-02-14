@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #0c1621e6;
+    color: #fff;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+}
+nav{
+    width:100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content:space-between;
+    padding:40px 60px 0px 60px;
+    color: #fff;
+    z-index: 1000;
+}
+.nav_item ul{
+    display: flex;
+}
+.nav_item ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+.home{
+    height:100vh;
+    background-image: linear-gradient(145deg, rgba(38, 38, 40, 0.8267682072829132) 0%, rgba(101, 96, 96, 0.45702030812324934) 40%, rgba(150, 150, 157, 0.49343487394957986) 52%, rgba(68, 64, 64, 0.8407738095238095) 100%), url('./images/home_back.jpg');
+    object-fit: contain;
+    background-repeat:no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 15%;
+}
+.sub-title{
+    position: relative;
+    left:90px;
+    text-transform: uppercase;
+    color: yellow;
+    font-weight: bold;
+}
+.sub-title::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    height:3px;
+    width:70px;
+    background-color: yellow;
+    z-index: 2612746;
+}
+.home h1{
+    font-size: 5rem;
+}
+.social{
+    margin-top: 10px;
+}
+.social i{
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.content{
+    min-height:100vh;
+    /* background-color: #874b82; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+img {
+    object-fit: contain;
+    height: 600px;
+}
+.img{
+    position: relative;
+}
+.para{
+    max-width: 500px;
+    position:relative;
+    z-index: 10;
+    margin-top:100px;
+    left:50px;
+}
+.para h1{
+    margin-bottom: 30px;
+}
+.count{
+    position: absolute;
+    top:-80px;
+    left: -80px;
+    font-size: 5rem;
+    z-index: 1;
+    opacity: 0.2;
+}
+.more{
+    margin-top: 20px;
+    color: yellow;
+}
+
+
+/* footer section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 43px;
+    padding:0px 50px;
+}
+.footer_head{
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: yellow;
+}
+.footer_content p{
+    margin-top: 6px;
+}
+.copyright{
+    padding-top: 30px;
+    color: #525050e7;
+}
